@@ -10132,10 +10132,27 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .clebot-container .head {
   background-image: linear-gradient(to top, #9c3f69, #bb98be);
 }
+.clebot-container .head .circle {
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  margin-bottom: 63px;
+}
+.clebot-container .head .circle img {
+  width: 65px;
+}
 .clebot-container .head .title {
   font-size: 119.5px;
   margin-bottom: 53px !important;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .head .title {
+    font-size: 80px;
+  }
 }
 .clebot-container .head .subtitle {
   font-size: 36px;
@@ -10146,6 +10163,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
   .clebot-container .head .subtitle {
     margin-bottom: 1rem !important;
+    font-size: 16px;
   }
 }
 .clebot-container .head button {
@@ -10163,6 +10181,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
   .clebot-container .head button {
     width: 100%;
+    height: 48px;
+    font-size: 16px;
   }
 }
 .clebot-container .head button span {
@@ -10172,6 +10192,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: white;
   font-style: italic;
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .head .content {
+    font-size: 16px;
+  }
 }
 .clebot-container .doubts {
   background-image: linear-gradient(to top, #f9cace, #faeef3);
@@ -10242,6 +10267,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .clebot-container .doubts .questions .question:last-child {
   margin-bottom: 0;
 }
+.clebot-container .benefits .benefit-card img {
+  margin-bottom: 19px;
+}
 .clebot-container .benefits .benefit-card .title {
   font-size: 27px;
   font-family: "Aller";
@@ -10261,10 +10289,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   box-shadow: -26px 15px 35px 0 rgba(31, 110, 227, 0.15);
   text-transform: none;
 }
+@media screen and (max-width: 768px) {
+  .clebot-container .about .card {
+    background-image: linear-gradient(to top, #b4507d, #7c274d);
+  }
+}
 .clebot-container .about .card .hero-body {
   padding-top: 6rem;
   padding-bottom: 4rem;
   padding-left: 3.75rem;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .clebot-container .about .card .hero-body {
@@ -10301,10 +10335,29 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
   .clebot-container .about .card .button {
     width: auto;
+    height: 48px;
+    font-size: 16px;
   }
+}
+.clebot-container .about .card .image-bg {
+  position: absolute;
+  top: -8rem;
+  width: 82vw;
+  left: -2rem;
+}
+.clebot-container .about .card .person {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
 }
 .clebot-container .idealizers {
   background-image: linear-gradient(to top, #ffeeed, #f8dddc);
+  padding-bottom: 10rem;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers {
+    padding-bottom: 1rem;
+  }
 }
 .clebot-container .idealizers .title {
   margin-bottom: 18px;
@@ -10403,6 +10456,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     width: 100%;
   }
 }
+.clebot-container .idealizers .promo-card img {
+  position: absolute;
+  width: 30vw;
+  right: -8rem;
+  top: -3rem;
+}
 .clebot-container .footer {
   background-image: linear-gradient(to top, #af5980, #852e55);
   color: white;
@@ -10420,11 +10479,29 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 48px;
   margin-bottom: 37px;
 }
+@media screen and (max-width: 768px) {
+  .clebot-container .footer .border {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 .clebot-container .footer p {
   line-height: 28px;
 }
 .clebot-container .footer a {
   color: white;
+}
+.clebot-container .footer .partners img {
+  margin-bottom: 2rem;
+}
+.clebot-container .footer .circle {
+  width: 43px;
+  height: 43px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 0.5rem;
 }
 
 .button.clebot-talk-bt {
