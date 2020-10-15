@@ -10210,13 +10210,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   left: 0;
   z-index: -1;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .clebot-container .head .image-bg-2 {
   position: absolute;
   z-index: -1;
-  width: 40vw;
-  left: 60%;
+  width: 600px;
+  left: 55%;
   bottom: -3rem;
   transform: translateX(-50%);
 }
@@ -10454,7 +10454,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .clebot-container .idealizers .promo-card img {
   position: absolute;
-  width: 30vw;
+  width: 400px;
   right: -8rem;
   top: -3rem;
 }
