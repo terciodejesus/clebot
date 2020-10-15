@@ -10129,8 +10129,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-.clebot-container .head {
-  background-image: linear-gradient(to top, #9c3f69, #bb98be);
+@media screen and (max-width: 768px) {
+  .clebot-container .head {
+    background-image: linear-gradient(to top, #9c3f69, #bb98be);
+  }
 }
 .clebot-container .head .circle {
   align-items: center;
@@ -10163,10 +10165,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 768px) {
   .clebot-container .head .subtitle {
     margin-bottom: 1rem !important;
-    font-size: 16px;
+    font-size: 24px;
   }
 }
-.clebot-container .head button {
+.clebot-container .head .button {
   height: 68px;
   width: 350px;
   font-size: 18px;
@@ -10179,14 +10181,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border: none;
 }
 @media screen and (max-width: 768px) {
-  .clebot-container .head button {
+  .clebot-container .head .button {
     width: 100%;
     height: 48px;
     font-size: 16px;
   }
 }
-.clebot-container .head button span {
+.clebot-container .head .button span {
   color: #d94b89;
+}
+.clebot-container .head .button img {
+  width: 31px;
+  margin-left: 0.5rem;
 }
 .clebot-container .head .content {
   color: white;
@@ -10198,8 +10204,34 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 16px;
   }
 }
+.clebot-container .head .image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+.clebot-container .head .image-bg-2 {
+  position: absolute;
+  z-index: -1;
+  width: 40vw;
+  left: 60%;
+  bottom: -3rem;
+  transform: translateX(-50%);
+}
 .clebot-container .doubts {
-  background-image: linear-gradient(to top, #f9cace, #faeef3);
+  background-color: #F9DDDC;
+  margin-top: 7rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .doubts {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .clebot-container .doubts .title {
   font-size: 24px;
@@ -10267,6 +10299,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .clebot-container .doubts .questions .question:last-child {
   margin-bottom: 0;
 }
+.clebot-container .doubts .image-bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.clebot-container .doubts .image-bg-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.clebot-container .benefits {
+  padding-bottom: 7rem;
+}
 .clebot-container .benefits .benefit-card img {
   margin-bottom: 19px;
 }
@@ -10283,76 +10328,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-style: italic;
   font-family: "Aller";
 }
-.clebot-container .about .card {
-  background-image: linear-gradient(to top, #f0a7bf, #fdc1b1);
-  border-radius: 1rem;
-  box-shadow: -26px 15px 35px 0 rgba(31, 110, 227, 0.15);
-  text-transform: none;
-}
-@media screen and (max-width: 768px) {
-  .clebot-container .about .card {
-    background-image: linear-gradient(to top, #b4507d, #7c274d);
-  }
-}
-.clebot-container .about .card .hero-body {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  padding-left: 3.75rem;
-  z-index: 1;
-}
-@media screen and (max-width: 768px) {
-  .clebot-container .about .card .hero-body {
-    padding-left: 1.5rem !important;
-  }
-}
-.clebot-container .about .card .title {
-  color: white;
-  font-size: 31px;
-  margin-bottom: 49px;
-}
-@media screen and (max-width: 768px) {
-  .clebot-container .about .card .title {
-    font-size: 24px;
-    margin-bottom: 1rem;
-  }
-}
-.clebot-container .about .card p {
-  line-height: 22.5px;
-  color: #e4d2da;
-  margin-bottom: 2rem;
-}
-.clebot-container .about .card .button {
-  box-shadow: -26px 15px 35px 0 rgba(31, 110, 227, 0.15);
-  background-color: #ffb566;
-  border: none;
-  color: white;
-  width: 350px;
-  height: 63px;
-  border-radius: 0.5rem;
-  border-top-right-radius: 0;
-  letter-spacing: 1.4px;
-}
-@media screen and (max-width: 768px) {
-  .clebot-container .about .card .button {
-    width: auto;
-    height: 48px;
-    font-size: 16px;
-  }
-}
-.clebot-container .about .card .image-bg {
-  position: absolute;
-  top: -8rem;
-  width: 82vw;
-  left: -2rem;
-}
-.clebot-container .about .card .person {
-  position: absolute;
-  right: 5rem;
-  top: 2rem;
-}
 .clebot-container .idealizers {
   background-image: linear-gradient(to top, #ffeeed, #f8dddc);
   padding-bottom: 10rem;
+}
+.clebot-container .idealizers .container {
+  padding-top: 24rem;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers .container {
+    padding-top: 27rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .clebot-container .idealizers {
@@ -10365,7 +10351,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .clebot-container .idealizers .description {
   color: #a1426d;
-  margin-bottom: 39px;
+  margin-bottom: 5rem;
 }
 .clebot-container .idealizers .cards .card {
   height: 151px;
@@ -10375,15 +10361,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   align-items: center;
   padding: 21px;
   overflow: unset;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
   .clebot-container .idealizers .cards .card {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 .clebot-container .idealizers .cards .card .info .name {
   font-size: 16px;
   color: #ffaf99;
+  text-transform: uppercase;
 }
 .clebot-container .idealizers .cards .card .info .status {
   font-size: 12px;
@@ -10450,17 +10438,98 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-radius: 0.5rem;
   border-top-right-radius: 0;
   letter-spacing: 1.4px;
+  position: absolute;
+  bottom: -2rem;
 }
 @media screen and (max-width: 768px) {
   .clebot-container .idealizers .promo-card .button {
     width: 100%;
+    position: unset;
   }
+}
+.clebot-container .idealizers .promo-card .button img {
+  width: 31px;
+  margin-left: 0.5rem;
+  position: unset;
 }
 .clebot-container .idealizers .promo-card img {
   position: absolute;
   width: 30vw;
   right: -8rem;
   top: -3rem;
+}
+.clebot-container .idealizers .about-card {
+  background-image: linear-gradient(to top, #f0a7bf, #fdc1b1);
+  border-radius: 1rem;
+  box-shadow: -26px 15px 35px 0 rgba(31, 110, 227, 0.15);
+  text-transform: none;
+  position: absolute;
+  top: -10rem;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers .about-card {
+    background-image: linear-gradient(to top, #b4507d, #7c274d);
+  }
+}
+.clebot-container .idealizers .about-card .hero-body {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  padding-left: 3.75rem;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers .about-card .hero-body {
+    padding-left: 1.5rem !important;
+  }
+}
+.clebot-container .idealizers .about-card .title {
+  color: white;
+  font-size: 31px;
+  margin-bottom: 49px;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers .about-card .title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+}
+.clebot-container .idealizers .about-card p {
+  line-height: 22.5px;
+  color: #e4d2da;
+  margin-bottom: 2rem;
+}
+.clebot-container .idealizers .about-card .button {
+  box-shadow: -26px 15px 35px 0 rgba(31, 110, 227, 0.15);
+  background-color: #ffb566;
+  border: none;
+  color: white;
+  width: 350px;
+  height: 63px;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  letter-spacing: 1.4px;
+}
+@media screen and (max-width: 768px) {
+  .clebot-container .idealizers .about-card .button {
+    width: auto;
+    height: 48px;
+    font-size: 16px;
+  }
+}
+.clebot-container .idealizers .about-card .button img {
+  width: 31px;
+  margin-left: 0.5rem;
+}
+.clebot-container .idealizers .about-card .image-bg {
+  position: absolute;
+  top: -8rem;
+  width: 82vw;
+  left: -2rem;
+}
+.clebot-container .idealizers .about-card .person {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
 }
 .clebot-container .footer {
   background-image: linear-gradient(to top, #af5980, #852e55);
